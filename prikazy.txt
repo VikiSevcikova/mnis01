@@ -1,0 +1,97 @@
+Viktória@viki-pc MINGW64 ~/mnis01 (master)
+$ git branch "MNIS2601"
+
+Viktória@viki-pc MINGW64 ~/mnis01 (master)
+$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   zoznam_prac.xhtml
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Viktória@viki-pc MINGW64 ~/mnis01 (master)
+$ git commit -m "doplnene informacie"
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Changes not staged for commit:
+        modified:   zoznam_prac.xhtml
+
+no changes added to commit
+
+Viktória@viki-pc MINGW64 ~/mnis01 (master)
+$ git add zoznam_prac.xhtml
+
+Viktória@viki-pc MINGW64 ~/mnis01 (master)
+$ git commit -m "doplnene informacie"
+[master 2e0508c] doplnene informacie
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+Viktória@viki-pc MINGW64 ~/mnis01 (master)
+$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+nothing to commit, working directory clean
+
+Viktória@viki-pc MINGW64 ~/mnis01 (master)
+$ git checkout master
+Already on 'master'
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Viktória@viki-pc MINGW64 ~/mnis01 (master)
+$ git pull origin master
+From https://github.com/VikiSevcikova/mnis01
+ * branch            master     -> FETCH_HEAD
+Already up-to-date.
+
+Viktória@viki-pc MINGW64 ~/mnis01 (master)
+$ git merge MNIS2601
+Already up-to-date.
+
+Viktória@viki-pc MINGW64 ~/mnis01 (master)
+$ git push origin master
+Logon failed, use ctrl+c to cancel basic credential prompt.
+Username for 'https://github.com/': VikiSevcikova
+remote: Invalid username or password.
+fatal: Authentication failed for 'https://github.com/VikiSevcikova/mnis01.git/'
+
+Viktória@viki-pc MINGW64 ~/mnis01 (master)
+$ git push origin master
+Logon failed, use ctrl+c to cancel basic credential prompt.
+Username for 'https://github.com/': VikiSevcikova
+remote: Invalid username or password.
+fatal: Authentication failed for 'https://github.com/VikiSevcikova/mnis01.git/'
+
+Viktória@viki-pc MINGW64 ~/mnis01 (master)
+$ git push origin master
+Counting objects: 3, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 417 bytes | 0 bytes/s, done.
+Total 3 (delta 1), reused 0 (delta 0)
+To https://github.com/VikiSevcikova/mnis01.git
+   553b99b..2e0508c  master -> master
+
+Viktória@viki-pc MINGW64 ~/mnis01 (master)
+$ git branch "MNIS2602"
+
+Viktória@viki-pc MINGW64 ~/mnis01 (master)
+$ git add zoznam_prac.xhtml
+
+Viktória@viki-pc MINGW64 ~/mnis01 (master)
+$ git commit -m "doplnena anotacia"
+[master 393d654] doplnena anotacia
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+Viktória@viki-pc MINGW64 ~/mnis01 (master)
+$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+nothing to commit, working directory clean
+
